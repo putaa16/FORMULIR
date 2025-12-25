@@ -1,0 +1,185 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Universitas Subang</title>
+        <style>
+             h2{
+            text-align: center;
+            color: rgb(12, 13, 13);
+            }
+            
+            h3{
+               text-align: center;
+            color: rgb(12, 13, 13); 
+            }
+
+            .logounsub{
+                width: 200px;
+                height: auto;
+            }
+            .logo-container{
+                text-align: center;
+                margin-bottom: 30px ;
+                margin-top: 30px;
+            }
+
+             body{
+                font-family: Arial;
+                background-color: #7fc4f6df;
+                margin: 40px;
+            }
+
+            form{
+                width: 550px;
+                margin: 0 auto;
+                background-color: white;
+                padding: 25px 50px ; 
+                border-radius: 10px;
+                box-shadow:  0 0 10px rgb(0, 0, 0, 0.3);
+            }
+
+            table {
+                    width: 110%;
+                    border-collapse: collapse;
+            }
+
+            td {
+                padding: 20px;
+                vertical-align: middle;
+            }
+
+            input[type="text"],
+            input[type="password"],
+            select,
+            textarea {
+                width:250px;
+                padding: 3px;
+                font-family: Arial;
+            }
+ 
+            input[type="date"]
+            {
+              width: 100px;
+            }
+            input[type='tt']
+            {
+                width: 175px;
+                padding: 3px;
+            }
+
+            textarea{
+                height: 100px;
+            }
+
+            .button{
+                text-align: center;
+                margin-top: 15px;
+            }
+
+            input[type="submit"],
+            input[type="reset"]{
+                padding: 6px 25px;
+                margin: 5px;
+                cursor: pointer; 
+            }
+
+            footer{
+                text-align: center;
+                font-size: small;
+            }   
+        </style>    
+    </head>
+    <body>
+        <!--Bagian Header-->
+        <header>
+            <h2>SELAMAT DATANG DI WEBSITE FAKULTAS ILMU KOMPUTER</h2>
+             <div class="logo-container">
+            <img src="logounsub.png" alt="Logo Universitas Subang" class="logounsub">
+             </div>
+            <h3>FORM PENDATAAN MAHASISWA/I SISTEM INFORMASI</h3>
+        </header>
+        <!--Bagian Form-->
+        <form action="proses.php" method="post">
+         <table>
+            <tr>
+                <td>Nomor Pokok Mahasiswa</td>
+                <td>:</td>
+                <td><input type="text" name="nomor pokok mahasiswa"></td>
+            </tr>
+            <tr>
+                <td>Nama Mahasiswa</td>
+                <td>:</td>
+                <td><input type="text" name="nama"></td>
+            </tr>     
+            <tr>
+                <td>Alamat</td>
+                <td>:</td>
+                <td><input type="text" name="alamat"></td>
+            </tr>       
+            <tr>
+                <td>Tempat, tanggal lahir</td>
+                <td>:</td>
+                <th><input type="tt" name="tempat"> <input type="date" name="" id=""></th>
+            </tr>          
+            <tr>
+                <td>Password</td>
+                <td>:</td>
+                <td><input type="password" name="password"></td>
+            </tr>
+            <tr>
+                <td>Konfirmasi Password</td>
+                <td>:</td>
+                <td><input type="password" name="konfirmasi"></td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>:</td>
+                <td>
+                    <input type="radio" name="gender" value="Pria">Pria
+                    <input type="radio" name="gender" value="Wanita">Wanita
+               </td>
+            </tr>
+            <tr>
+                <td>Hobi</td>
+                <td>:</td>
+                <td>
+                    <input type="checkbox" name="hobi" value="Membaca">Membaca
+                    <input type="checkbox" name="hobi" valuev="Memancing">Memancing
+                    <input type="checkbox" name="hobi" value="Lain-lain">Lain-lain
+                </td>
+            </tr>
+            <tr>
+                <td>Tingkat Pendidikan</td>
+                <td></td>
+                <td>
+                    <select name="pendidikan">
+                        <option value="">--Pilih--</option>
+                        <option value="D3">D3</option>
+                        <option value="S1">S1</option>
+                        <option value="S2">S2</option>
+                    </select>
+                </td>
+            </tr> 
+            <tr>
+                <td>Komentar</td>
+                <td></td>
+                <td><textarea name="komentar"></textarea></td>
+            </tr>
+         </table>
+         <div class="button">
+            <input type="submit" value="Kirim">
+            <input type="reset" value="Reset">
+         </div>
+        </form>
+        <br>
+            <br>
+        <br>
+           <space><br></space>
+        <!--Footer-->
+        <footer> &copy; ARYA PUTRA ADITYA | D1A250063</footer>
+    </body>
+</html>
